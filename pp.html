@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Pictures and Details</title>
+  <style>
+    form {
+      width: 50%;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 20px;
+      width: 45%;
+      font-size: 30px;
+      background-color: #f37979;
+      border: #d20000;
+      border-radius: 10%;
+			padding: 5px;
+    }
+    input[type="file"], input[type="text"] {
+      display: block;
+      margin-bottom: 20px;
+      width: 50%;
+      height: 10px;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    button {
+      display: block;
+      margin-top: 35px;
+      font-family:  Arial, Helvetica, sans-serif;
+      font-size: 24px;
+    }
+    select {
+      font-size: 30px;
+      height: 60px;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 50%;
+    }
+    option {
+      font-size: 30px;
+      height: 60px;
+      width: 50%;
+    }
+    .bg-image {
+			background-image: url("lp.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+    .bg-text {
+			background-color: #91f1a9;
+			padding: 10px;
+		}
+    .right-text {
+			text-align: right;
+      background-color: #f37979;
+      border: #d20000;
+      border-radius: 25%;
+			padding: 50px;
+      float: right;
+      float: right;
+		}
+  </style>
+</head>
+<body>
+  <body class="bg-image">
+    <p class="right-text">WE HELP YOU FIND THE BEST HOME FOR YOUR PET<br>
+      uploade the picture and details of the pet you want
+      to put up <br>for adoption. our team will verify your details and<br> helps you find 
+      the best adopter.
+    </p>
+  </body>
+  <form>
+    <label for="picture">Picture:</label>
+    <input type="file" id="picture" name="picture">
+    <label for="animal">Animal:</label>
+    <input type="text" id="animal" name="animal">
+    <label for="gender">Gender:</label>
+    <select id="size" name="size">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+    </select>
+    <label for="breed">Breed:</label>
+    <input type="text" id="breed" name="breed">
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age">
+    <label for="health">Health History:</label>
+    <input type="text" id="health" name="health">
+    <label for="other">Other Discription:</label>
+    <input type="text" id="other" name="other">
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>
