@@ -1,0 +1,67 @@
+<!-- home.html -->
+<div id="homePage" class="page hidden">
+    <h1>Home Page</h1>
+    <div>
+        <label>
+            Filter by Type:
+            <select id="typeFilter" onchange="filterPets()">
+                <option value="cat">cat</option>
+                <option value="dog">dog</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>
+            Filter by Breed:
+            <select id="breedFilter" onchange="filterPets()">
+                <option value="pomerian">pomerian</option>
+                <option value="german shepherd">german shepherd</option>
+                <option value="husky">husky</option>
+                <option value="frenchbulldog">frenchbulldog</option>
+                <option value="siameese cat">siameese cat</option>
+                <option value="persian cat">persian cat</option>
+                <option value="siberian cat">siberiancat</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>
+            Filter by Gender:
+            <select id="genderFilter" onchange="filterPets()">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>
+            Filter by Age:
+            <select id="ageFilter" onchange="filterPets()">
+                <option value="2years">2years</option>
+                <option value="3years">3years</option>
+                <option value="4years">4years</option>
+            </select>
+        </label>
+    </div>
+    <div id="petList">
+        <h2>Available Pets</h2>
+        <ul id="pets"></ul>
+    </div>
+</div>
+<!-- home.html -->
+
+<!-- The container to display images -->
+<div id="imagesContainer"></div>
+
+<!-- The page to display images -->
+<div id="imagesPage" class="page hidden">
+  <!-- You can add a heading or any other content here -->
+  <h2>Images</h2>
+  <ul id="petsImagesList"></ul>
+</div>
+
+<!-- Rest of your HTML structure -->
+
+<!-- The list of pets -->
+<ul id="pets"></ul>
+<script src="home.js"></script>
